@@ -35,6 +35,7 @@ class BookWatcherBloc extends Bloc<BookWatcherEvent, BookWatcherState> {
               );
         },
         booksReceived: (e) async {
+          emit(const BookWatcherState.loadInProgress());
           emit(
             e.failureOrBooks.fold(
               (f) => BookWatcherState.loadFailure(f),

@@ -19,4 +19,20 @@ enum Genre {
         return Genre.unknown;
     }
   }
+
+  @override
+  String toString() {
+    switch (this) {
+      case Genre.scienceFiction:
+        return 'Science-Fiction';
+      case Genre.science:
+        return 'Science';
+      case Genre.fiction:
+        return 'Fiction';
+      case Genre.nonFiction:
+        return 'Non-Fiction';
+      default:
+        return 'Unknown';
+    }
+  }
 }

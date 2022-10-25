@@ -28,6 +28,7 @@ dependencies:
   provider: ^6.0.4
   rxdart: ^0.27.5
   another_flushbar: ^1.12.29
+  badges: ^2.0.3
 
 dev_dependencies:
   flutter_test:
